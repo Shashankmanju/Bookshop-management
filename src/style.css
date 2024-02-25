@@ -1,0 +1,475 @@
+* {
+  margin: 10px;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f5f5f5;
+  color: #333;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.books {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.book {
+  flex-basis: calc(30% - 20px);
+  margin-bottom: 20px;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  overflow: hidden;
+  transition: transform 0.3s ease;
+}
+
+.book:hover {
+  transform: scale(1.02);
+}
+
+img {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+}
+
+.book-details {
+  padding: 15px;
+}
+
+h2 {
+  color: #3498db; /* Blue color for book title */
+}
+
+p {
+  color: #2ecc71; /* Green color for book description */
+}
+
+span {
+  color: #e74c3c; /* Red color for book price */
+}
+
+.delete,
+.update,
+.add {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  margin-top: 10px;
+  border: 1px solid #3498db;
+  background-color: #3498db;
+  color: #fff;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.delete:hover,
+.update:hover,
+.add:hover {
+  background-color: #297fb8;
+}
+
+.addHome {
+  display: block;
+  margin: 20px auto;
+  padding: 10px 20px;
+  background-color: #3498db;
+  color: #fff;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.addHome:hover {
+  background-color: #297fb8;
+}
+
+/* Search Bar Styles */
+.search-container {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+input[type="text"] {
+  width: 60%;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.3s ease;
+}
+
+input[type="text"]:focus {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Form Styles */
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.3s ease;
+}
+
+input[type="text"] {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.3s ease;
+}
+
+input[type="text"]:focus {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.formbutton .btn {
+  background-color: #3498db;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 4px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.formbutton .btn:hover {
+  background-color: #297fb8;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 300px;
+  margin: auto;
+}
+
+h1 {
+  text-align: center;
+}
+
+input,
+textarea {
+  width: 100%;
+  padding: 10px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+button {
+  background-color: #3498db;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #2980b9;
+}
+
+.error {
+  color: red;
+  text-align: center;
+  font-weight: bold;
+}
+
+Link {
+  text-align: center;
+  text-decoration: none;
+  color: #3498db;
+  font-weight: bold;
+}
+
+Link:hover {
+  color: #2980b9;
+}
+
+
+
+
+
+
+
+
+
+
+/* ... (Your existing CSS) */
+
+/* Centered and styled copyright text */
+.copyright {
+  width: 100%;
+  text-align: center;
+  padding: 25px 0;
+  background: #262626;
+  font-weight: 300;
+  margin-top: 20px;
+}
+
+.copyright p {
+  margin: 0;
+  color: #fff;
+}
+
+
+
+/* Add.css */
+
+.form-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.form {
+  width: 400px; /* Adjust width as needed */
+  padding: 40px;
+  background-color: #ffffff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  overflow: hidden;
+  transition: transform 0.3s;
+}
+
+.form:hover {
+  transform: scale(1.05); /* Hover effect for scaling */
+}
+
+.form h1 {
+  text-align: center;
+  color: #333;
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.form input,
+.form textarea {
+  width: 100%;
+  padding: 15px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  box-sizing: border-box;
+  font-size: 16px;
+}
+
+.form textarea {
+  resize: vertical;
+}
+
+.form button {
+  width: 100%;
+  background-color: #4caf50;
+  color: #fff;
+  padding: 15px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s;
+}
+
+.form button:hover {
+  background-color: #45a049;
+}
+
+.form Link {
+  display: block;
+  text-align: center;
+  margin-top: 20px;
+  color: #4caf50;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 16px;
+  transition: color 0.3s;
+}
+
+.form Link:hover {
+  color: #45a049;
+}
+
+
+
+/* Add this CSS to your existing styles */
+
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f5f5f5; /* Set a light background color */
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  color: #333; /* Set heading color */
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.books {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin-top: 20px;
+}
+
+.book {
+  background-color: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  margin: 10px;
+  padding: 15px;
+  text-align: center;
+}
+
+.book img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
+
+.book h2 {
+  color: #333;
+}
+
+.book p {
+  color: #555;
+  margin-bottom: 10px;
+}
+
+.book span {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+
+.delete, .update, .addHome {
+  background-color: #2196F3; /* Change green to blue */
+  color: #fff;
+  border: none;
+  padding: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  margin: 5px;
+  text-decoration: none;
+}
+
+.delete:hover, .update:hover, .addHome:hover {
+  background-color: #0e86d4; /* Darker blue on hover */
+}
+
+/* Style the search box */
+input[type="text"] {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  box-sizing: border-box;
+}
+
+/* Style the copyright section */
+.footer {
+  text-align: center;
+  background-color: #333;
+  color: #fff;
+  padding: 10px 0;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+
+
+/* Add these CSS styles to your existing styles */
+
+.addHome {
+  display: block;
+  margin: 20px auto; /* Center the button */
+  background-color: #2196F3;
+  color: #fff;
+  border: none;
+  padding: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.addHome:hover {
+  background-color: #0e86d4;
+}
+
+/* Center the search box */
+input[type="text"] {
+  width: 80%; /* Adjust the width as needed */
+  max-width: 400px; /* Set a max-width if desired */
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin: 10px auto; /* Center the search box */
+  box-sizing: border-box;
+}
+
+
+/* style.css */
+
+/* ... other styles ... */
+
+.addHome {
+  display: block;
+  margin: 20px auto;
+  background-color: #2196F3;
+  color: #fff;
+  font-family: 'Poppins', sans-serif;
+  border: none;
+  padding: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.addHome:hover {
+  background-color: #0e86d4;
+}
+
+input[type="text"] {
+  width: 80%;
+  max-width: 400px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin: 10px auto;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+/* ... other styles ... */
+
+
+
+
+
+
+
